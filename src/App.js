@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-
+import RegistrationForm from'./RegistrationForm.js';
 function App() {
   function fetchRequestTest(){
-    fetch('http://localhost/demo/',{
+    fetch('http://localhost/DzenPosBackend/Api/Chlen',{
       method: 'POST',
       headers :{
         'Content-Type':'test'
@@ -18,20 +18,7 @@ function App() {
   return (
     <div className="App">
       <button onClick = {fetchRequestTest}>button</button>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RegistrationForm></RegistrationForm>
     </div>
   );
 }
