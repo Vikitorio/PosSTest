@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import RegistrationForm from'./RegistrationForm.js';
+import RegistrationForm from'./RegistrationForm/RegistrationForm';
 function App() {
   function fetchRequestTest(){
     fetch('http://localhost/DzenPosBackend/Api/Chlen',{
